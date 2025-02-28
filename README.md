@@ -36,8 +36,43 @@ Empuja la rama al repositorio remoto (tu repositorio forkeado).
 - Escribe un título y una descripción breve del cambio.
 - Envía el Pull Request para que el profesor lo revise.
 
+
 ### 7️⃣ Esperar Revisión y Aprobación
 
 El profesor revisará tu PR y podrá hacer comentarios.
 
 Si todo está correcto, tu PR será aceptado y fusionado en el repositorio original. 🎉
+
+
+
+---
+
+# Resumen
+1. Fork del repositorio original
+   => Hecho por **el colaborador** en **GitHub** (en el repositorio original).
+   
+2. Clonar el repositorio forkeado
+   => Hecho por **el colaborador** en su **máquina local** (usando `git clone`).
+
+3. Crear una nueva rama
+   => Hecho por **el colaborador** en su **máquina local** (usando `git checkout -b nombre-de-la-rama`).
+
+4. Hacer cambios en tu rama
+   => Hecho por **el colaborador** en su **máquina local** (modificando archivos del proyecto).
+
+5. Añadir y hacer commit de los cambios
+   => Hecho por **el colaborador** en su **máquina local** (usando `git add` y `git commit`).
+
+6. Subir la rama a tu repositorio en GitHub
+   => Hecho por **el colaborador** en **GitHub** (usando `git push origin nombre-de-la-rama`).
+
+7. Hacer merge con la rama **main** (de tu repositorio)
+   => Hecho por **el colaborador** en su **máquina local** (usando `git merge main`).
+   => Si no es posible, **los mantenedores** pueden hacerlo en **GitHub** si se generan conflictos.
+
+8. Crear un pull request (PR)
+   => Hecho por **el colaborador** en **GitHub** (usando la interfaz de GitHub para crear el PR).
+
+9. Revisar y esperar la aprobación
+   => Hecho por **los mantenedores** en **GitHub** (revisando los cambios en el PR y dejando comentarios).
+
