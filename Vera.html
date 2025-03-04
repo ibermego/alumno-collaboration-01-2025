@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, rgb(11, 75, 224), rgb(177, 224, 224));
+
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: white;
+            font-size: 50px;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            overflow: hidden;
+        }
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .green { background-color: rgb(1, 10, 1); animation: move1 12s infinite; }
+        .yellow { background-color: rgb(175, 135, 24); animation: move2 10s infinite; }
+        .blue { background-color: rgb(28, 166, 201); animation: move3 10s infinite; }
+       
+
+        @keyframes move1 {
+            0% { top: 0; left: 200; }
+            33% { top: 200px; left: 500px; }
+            66% { top: 300px; left: 300px; }
+            100% { top: 0px; left: 200px; }
+        }
+        @keyframes move2 {
+            0% { top: 350px; left: 350px; }
+            25% { top: 0; left: 350px; }
+            50% { top: 0; left: 0; }
+            75% { top: 350px; left: 0; }
+            100% { top: 350px; left: 350px; }
+        }
+        @keyframes move3 {
+            0% { top: 0; left: 350px; }
+            25% { top: 350px; left: 350px; }
+            50% { top: 350px; left: 0; }
+            75% { top: 0; left: 0; }
+            100% { top: 0; left: 350px; }
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Black Desert🐲</h1>
+    <div class="container">
+        <div class="box green"></div>
+        <div class="box yellow"></div>
+        <div class="box blue"></div>
+        <div class="box white"></div>
+    </div>
+</body>
+</html>
