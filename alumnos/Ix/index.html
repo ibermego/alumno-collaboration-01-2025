@@ -4,8 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ixchel</title>
+    <style>
+        body {
+            background-color: rgb(3, 133, 133);
+        }
+        h1 {
+            text-align: center;
+        }
+        #container {
+            margin: 0;
+            padding: auto;
+            display: flex;
+            justify-content: center;
+            height: 100px;
+        }
+       
+        .cuboA {
+            background-color: rgba(231, 235, 235, 0.466);
+            width: 50px;
+            height: 50px;
+            animation-name: moveDiv;
+            animation-duration: 2s;     /*<-- invoca al keyframe*/
+            animation-timing-function: linear;       /* Movimiento suave */
+            animation-iteration-count: infinite;  
+        }
+        .cuboB {
+            background-color: rgb(22, 168, 22);
+            width: 50px;
+            height: 50px;
+            animation-name: moveDiv1;
+            animation-duration: 2s;     /*<-- invoca al keyframe*/
+            animation-timing-function: linear;       /* Movimiento suave */
+            animation-iteration-count: infinite;  
+        }
+        .cuboC {
+            background-color: rgb(168, 22, 156);
+            width: 50px;
+            height: 50px;
+        }
+        .cuboD {
+            background-color: rgb(22, 168, 168);
+            width: 50px;
+            height: 50px;
+        }
+        @keyframes moveDiv {
+            0% {
+                transform: translateX(50px);
+            }
+            25% {
+                transform: translateY(-50px);
+            }
+            50% {
+                transform: translateX(-50px);
+            }
+            75% {
+                transform: translateY(50px);
+            }
+            100% {
+                transform: translateX(-50px);
+            }
+       /*  0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        50% {
+            opacity: 0,5;
+            transform: translateY(100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(100px);
+        } */
+        }
+    @keyframes moveDiv1 {
+            0% {
+                transform: translateX(80px);
+            }
+            25% {
+                transform: translateY(150px);
+            }
+            50% {
+                transform: translateX(300px);
+            }
+            75% {
+                transform: translateY(60px);
+            }
+            100% {
+                transform: translateX(73px);
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Ixchel</h1>
+    <h1>Welcome to the Fun Animation Page!</h1>
+    <div id="container">
+        <div id="cubos" class="cuboA"></div>
+        <div id="cubos"class="cuboB"></div>
+        <div id="cubos"class="cuboC"></div>
+        <div id="cubos"class="cuboD"></div>
+    </div>
 </body>
 </html>
