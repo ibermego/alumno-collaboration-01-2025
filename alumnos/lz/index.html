@@ -3,9 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página Luis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(90deg, rgba(58,180,99,1) 0%, rgba(253,29,29,1) 100%);
+            font-family: sans-serif;
+        }
+
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            width: 80%;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .boxAzul {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 0, 200, 0.5);
+            position: relative;
+            border-radius: 10px;
+
+            animation: moverAzul;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moverAzul {
+            0% { transform:translate(0px, 0px); }
+            25% { transform:translate(200px, 200px); }
+            50% { transform:translate(400px, 400px); }
+            75% { transform:translate(200px, 100px); }
+            100% { transform:translate(0px, 0px); }
+        }
+
+        .boxRed {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(200, 0, 0, 0.5);
+            position: relative;
+            border-radius: 10px;
+
+            animation: moverRojo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moverRojo {
+            0% { transform:translate(200px, 200px); }
+            25% { transform:translate(200px, 100px); }
+            50% { transform:translate(400px, 200px); }
+            75% { transform:translate(300px, 100px); }
+            100% { transform:translate(200px, 200px); }
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Hola Soy Luis</h1>
+    <div class="container">
+        <h1>Welcome to my page!!</h1>
+        <div id="boxAzul" class="boxAzul"></div>
+        <div id="boxRed" class="boxRed"></div>
+    </div>
 </body>
 </html>
